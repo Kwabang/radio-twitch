@@ -1,0 +1,19 @@
+{
+  "name": "radio-twitch",
+  "version": "1.0.0",
+  "description": "radio-twitch",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwabang/radio-twitch.git"
+  },
+  "author": "kwabang",
+  "bugs": {
+    "url": "https://github.com/Kwabang/radio-twitch/issues"
+  },
+  "homepage": "https://github.com/Kwabang/radio-twitch#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
