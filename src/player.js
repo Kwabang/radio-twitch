@@ -33,7 +33,7 @@ const adreq = async (m3u8) => {
       console.log('An error occurred while waiting for skip ad.')
       process.exit()
     }
-    if ((await res.text()).includes('Amazon') == false) break
+    if ((await res.text()).includes('Amazon') === false) break
     await sleep(5000)
   }
 }

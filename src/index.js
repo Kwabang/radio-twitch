@@ -7,7 +7,7 @@ const rl = readline.createInterface({
 })
 
 const init = () => {
-  if (process.argv[2] == undefined) {
+  if (process.argv[2] === undefined) {
     query.category().then((categorys) => {
       for (let i = 0; i < categorys.length; i++) {
         console.log(`${i+1}. ${categorys[i].displayName}`)
