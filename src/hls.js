@@ -57,7 +57,7 @@ const twitch = (id) => {
 								default: //m3u8 data doesn't exsit
 									reject({
 										'code': 2,
-										'message':'m3u8 data doesn\'t exsit'
+										'message': 'm3u8 data doesn\'t exsit'
 									})
 							}
 						}).catch((err) => {

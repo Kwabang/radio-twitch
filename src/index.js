@@ -7,14 +7,14 @@ const rl = readline.createInterface({
 })
 
 const init = () => {
-	if(process.argv[2] == undefined ) {
+	if (process.argv[2] == undefined) {
 		query.category().then((categorys) => {
 			for (let i = 0; i < categorys.length; i++) {
 				console.log(`${i+1}. ${categorys[i].displayName}`)
 			}
 			rl.question("Select a category. : ", (number) => {
 				console.clear()
-				select_stream(categorys[Number(number)-1].name)
+				select_stream(categorys[Number(number) - 1].name)
 			})
 		}).catch((err) => {
 			console.log(err.message)
@@ -31,7 +31,7 @@ const select_stream = (category) => {
 		}
 		rl.question("Select stream for watching. : ", (number) => {
 			console.clear()
-			player.twitch(streams[Number(number)-1].login)
+			player.twitch(streams[Number(number) - 1].login)
 			rl.close()
 		})
 	}).catch((err) => {
