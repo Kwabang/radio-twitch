@@ -7,7 +7,8 @@ const category = () => {
       res = await fetch("https://gql.twitch.tv/gql", {
         method: "POST",
         headers: {
-          "client-id": config['Client-ID']
+          "client-id": config['Client-ID'],
+          "Accept-Language":config.language
         },
         body: JSON.stringify([{
           "operationName": "BrowsePage_AllDirectories",
